@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             //申请CALL_PHONE权限
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE},
                     REQUEST_CODE_CALL_PHONE);//自定义的code
-        } else {//拨号
+        } else {//已经获取权限，直接拨号
             showCallPhone();
         }
     }
